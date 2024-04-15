@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased] - ReleaseDate
+### Added
+* `-hide_banner` option 
+    https://ffmpeg.org/ffmpeg.html#Generic-options
+
+    Suppress printing banner.
+
+    All FFmpeg tools will normally show a copyright notice, build options and library versions. This option can be used to suppress printing this information.
+
+
 ### Fixed
 * arg_for_option/1 function in FFmpex module to not sue sigil `~w` which will turn every word in a separate argument, instead it will now return the argument as is
 
