@@ -52,7 +52,8 @@ defmodule FFmpex.Options.Main do
     segment_time:         %Option{name: "-segment_time", require_arg: true, contexts: [:input, :output]},
     segment_list:         %Option{name: "-segment_list", require_arg: true, contexts: [:input, :output]},
     mux_preload:          %Option{name: "-muxpreload", require_arg: true, contexts: [:input, :output]},
-    mux_delay:            %Option{name: "-muxdelay", require_arg: true, contexts: [:input, :output]}
+    mux_delay:            %Option{name: "-muxdelay", require_arg: true, contexts: [:input, :output]},
+    hide_banner:          %Option{name: "-hide_banner", contexts: [:global]},
   }
 
   require FFmpex.Options.Helpers
